@@ -1,0 +1,23 @@
+﻿@inherits LayoutComponentBase
+
+<HxMessenger Position="ToastContainerPosition.BottomCenter" />
+<HxMessageBoxHost />
+
+<div class="d-md-flex min-vh-100">
+    <ErrorBoundary>
+        <ErrorContent Context="exception">
+            <div class="main p-4 flex-grow-1">
+            </div>
+        </ErrorContent>
+        <ChildContent>
+            <Sidebar />
+            <div class="main px-1 flex-grow-1">
+                <div class="top-row px-4 mb-4">
+                    <strong><a style="text-decoration: none;" href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a></strong>
+                </div>
+
+                @Body
+            </div>
+        </ChildContent>
+    </ErrorBoundary>
+</div>

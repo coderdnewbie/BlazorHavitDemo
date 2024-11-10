@@ -1,0 +1,21 @@
+﻿<HxSidebar CssClass="top-row">
+	<HeaderTemplate>
+		<HxSidebarBrand BrandName="Havit Demo">
+			<LogoTemplate>
+				<img src="favicon.png" alt="" />
+			</LogoTemplate>
+		</HxSidebarBrand>
+	</HeaderTemplate>
+
+	<ItemsTemplate>
+		<HxSidebarItem Text="Home" Href="/" Icon="@BootstrapIcon.HouseDoorFill" Match="NavLinkMatch.All" />
+		<HxSidebarItem Text="Counter" Href="/counter" Icon="@BootstrapIcon.PlusSquareFill" />
+		<HxSidebarItem Text="Weather" Href="/weather" Icon="@BootstrapIcon.ListNested" />
+		<HxSidebarItem Text="Section 1" Icon="@BootstrapIcon.Person">
+			<HxSidebarItem Text="Section Item 1" Href="/one" />
+			<HxSidebarItem Text="Section Item 2" Href="/two" />
+			<HxSidebarItem Text="Section Item 3" Href="/three" />
+			<HxSidebarItem Text="Section Item 4" Href="/four" />
+		</HxSidebarItem>
+	</ItemsTemplate>
+</HxSidebar>

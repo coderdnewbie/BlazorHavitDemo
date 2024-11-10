@@ -1,0 +1,32 @@
+﻿@page "/counter"
+@rendermode InteractiveAuto
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<HxButton Color="ThemeColor.Primary" Text="Havit" OnClick="IncrementCount" />
+
+@code {
+    private int currentCount = 0;
+	private HxModal myModal = default!;
+
+	private async Task HandleShowClick()
+	{
+		await myModal.ShowAsync();
+	}
+
+	private async Task HandleHideClick()
+	{
+		await myModal.HideAsync();
+	}
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
